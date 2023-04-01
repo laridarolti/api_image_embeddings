@@ -26,6 +26,5 @@ message will look like this ```[{"filename": "shoe4.png", "rmse": 0.589840862452
 ## Relational Databases
 Are they a good way to store image embeddings? Relational databases are good at storing organised information that has 
 predictable structure and size, which makes it difficult to change these aspects. If the embeddings look like the ones 
-in the parquet file and do not change length, i.e. each image has 1024 embeddings, then yes, relational databases can be 
-used to store the embeddings. If images have a different number of embeddings, then it might be difficult to create 
-changes in the database.
+in the parquet file and do not change length, i.e. each image has an embedding of size 1024, then yes, relational databases can be 
+used to store the embeddings.
